@@ -20,7 +20,7 @@ Steps to protect files:
 
 1. in nginx config disable access to desired locations:
 
-   ::
+   .. code-block:: nginx
 
         location /static/files/fbi {
             deny all;
@@ -32,7 +32,7 @@ Steps to protect files:
 2. Add internal path to serve this files.
    We will add "root" directory to serve both locations with one configuration option:
 
-   ::
+   .. code-block:: nginx
 
         # needed for x-file-accell
         location /internal/files/ {
@@ -47,7 +47,7 @@ Steps to protect files:
    2. add ``"x_file_accel_redirects"`` to ``settings.INSTALLED_APPS``.
    3. Add app to your root url config, e.g.:
 
-      ::
+      .. code-block:: python
 
         urlpatterns += patterns('',
             (r'^protected/', include('x_file_accel_redirects.urls')),

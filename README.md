@@ -1,2 +1,0 @@
-django-x-file-accel
-===================

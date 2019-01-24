@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-x_file_accel_redirects',
-    version='0.0.2',
+    version='0.0.3',
     packages=find_packages(),
     requires=['python (>= 2.7)', 'django_model_utils'],
     install_requires=['django-model-utils>=1.4.0'],
